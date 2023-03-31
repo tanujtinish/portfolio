@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/tanujtinish.github.io/static/css/main.c96a054c.chunk.css",
+    "main.js": "/tanujtinish.github.io/static/js/main.101fa909.chunk.js",
+    "main.js.map": "/tanujtinish.github.io/static/js/main.101fa909.chunk.js.map",
+    "runtime-main.js": "/tanujtinish.github.io/static/js/runtime-main.88ce7d36.js",
+    "runtime-main.js.map": "/tanujtinish.github.io/static/js/runtime-main.88ce7d36.js.map",
+    "static/css/2.32ac199e.chunk.css": "/tanujtinish.github.io/static/css/2.32ac199e.chunk.css",
+    "static/js/2.9a2ccd51.chunk.js": "/tanujtinish.github.io/static/js/2.9a2ccd51.chunk.js",
+    "static/js/2.9a2ccd51.chunk.js.map": "/tanujtinish.github.io/static/js/2.9a2ccd51.chunk.js.map",
+    "index.html": "/tanujtinish.github.io/index.html",
+    "precache-manifest.18e77fd40f6ba9c4a145f7716d1e2f45.js": "/tanujtinish.github.io/precache-manifest.18e77fd40f6ba9c4a145f7716d1e2f45.js",
+    "service-worker.js": "/tanujtinish.github.io/service-worker.js",
+    "static/css/2.32ac199e.chunk.css.map": "/tanujtinish.github.io/static/css/2.32ac199e.chunk.css.map",
+    "static/css/main.c96a054c.chunk.css.map": "/tanujtinish.github.io/static/css/main.c96a054c.chunk.css.map",
+    "static/js/2.9a2ccd51.chunk.js.LICENSE.txt": "/tanujtinish.github.io/static/js/2.9a2ccd51.chunk.js.LICENSE.txt",
+    "static/media/earth.jpg": "/tanujtinish.github.io/static/media/earth.67af05e1.jpg",
+    "static/media/font-awesome.css": "/tanujtinish.github.io/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/image1.jpg": "/tanujtinish.github.io/static/media/image1.768998c6.jpg",
+    "static/media/image2.jpg": "/tanujtinish.github.io/static/media/image2.8de6195d.jpg",
+    "static/media/image3.jpg": "/tanujtinish.github.io/static/media/image3.28470933.jpg",
+    "static/media/image4.jpg": "/tanujtinish.github.io/static/media/image4.0b37f434.jpg",
+    "static/media/image5.jpg": "/tanujtinish.github.io/static/media/image5.8d16c4af.jpg",
+    "static/media/image6.jpg": "/tanujtinish.github.io/static/media/image6.62b7cc75.jpg",
+    "static/media/ionicons.css": "/tanujtinish.github.io/static/media/ionicons.621bd386.svg",
+    "static/media/male.png": "/tanujtinish.github.io/static/media/male.a82ab1cd.png",
+    "static/media/male1.png": "/tanujtinish.github.io/static/media/male1.3ec3891b.png",
+    "static/media/myImage.png": "/tanujtinish.github.io/static/media/myImage.bd80794f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88ce7d36.js",
+    "static/css/2.32ac199e.chunk.css",
+    "static/js/2.9a2ccd51.chunk.js",
+    "static/css/main.c96a054c.chunk.css",
+    "static/js/main.101fa909.chunk.js"
+  ]
+}
