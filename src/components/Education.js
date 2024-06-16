@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import AboutIcon from "./LiIcon";
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, info, grade }) => {
   const ref = useRef(null);
   return (
     <li
@@ -15,17 +15,25 @@ const Details = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{type}</h3>
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+          {type}
+        </h3>
         <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm">
-          {time} | {place}
+          {time} | {place} {"(" + grade + ")"}
         </span>
+        <div
+          className="capitalize text-dark/75 dark:text-light/50 xs:text-sm"
+          style={{ fontWeight: "bold" }}
+        >
+          {grade}
+        </div>
         <p className="font-medium w-full md:text-sm">{info}</p>
       </motion.div>
     </li>
   );
 };
 
-const Education = () => {
+const Education = ({ styleObj }) => {
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -34,8 +42,10 @@ const Education = () => {
   });
 
   return (
-    <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">Education</h2>
+    <div className="my-64" style={{ ...styleObj }}>
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+        Education
+      </h2>
 
       <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
         <motion.div
@@ -44,24 +54,18 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type="Bachelor of Science in Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute of Technology (MIT)"
+            type="Master's of Science In Comuter Science (Distributed Systems)"
+            time="2021-2023"
+            place="University of California, Santa Cruz"
+            grade="4+/4 GPA"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
           />
 
           <Details
-            type="Master of Computer Science"
-            time="2020-2022"
-            place="Stanford University"
+            type="Bachelor of Engineering - BE"
+            time="2015-2019"
+            place="Birla Institute of Technology and Science, Pilani"
             info="Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding."
-          />
-
-          <Details
-            type="Online Coursework"
-            time="2016-2020"
-            place="Coursera and edX"
-            info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering."
           />
         </ul>
       </div>

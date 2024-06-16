@@ -6,10 +6,14 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/profile_pic_2.jpeg";
+
 import TransitionEffect from "@/components/TransitionEffect";
+import useIsMobile from "@/components/Hooks/UseIsMobile";
 
 export default function Home() {
+  const isMobile = useIsMobile();
+
   return (
     <>
       <Head>
@@ -25,30 +29,56 @@ export default function Home() {
       <TransitionEffect />
       <article
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
+        style={{ position: "relative" }}
       >
         <Layout
-          className="!pt-0 md:!pt-16 sm:!pt-16"
-          styleObj={{ paddingLeft: "1vw", paddingRight: "3vw" }}
+          styleObj={
+            isMobile
+              ? {
+                  padding: "calc(var(--base-font-size) * (32 / 32))",
+                  paddingTop: "0",
+                }
+              : {
+                  padding: "calc(var(--base-font-size) * (16 / 32))",
+                  paddingRight: "calc(var(--base-font-size) * (32 / 32))",
+                  paddingTop: "0",
+                }
+          }
         >
           <div className="flex w-full items-start justify-between md:flex-col">
             <div className="w-1/2 lg:hidden md:inline-block md:w-full">
               <Image
                 src={profilePic}
                 alt="Tanuj Gupta"
-                className="h-auto w-full"
+                // className="h-auto w-full"
                 sizes="100vw"
                 priority
+                style={
+                  !isMobile
+                    ? {
+                        padding: "calc(var(--base-font-size) * (32 / 32))",
+                      }
+                    : {
+                        padding: "calc(var(--base-font-size) * (32 / 32))",
+                      }
+                }
               />
             </div>
             <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Building the Future with Distributed Systems and Cutting-Edge Web Solutions."
                 className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
-                styleObj={{ fontSize: "2.5vw", lineHeight: "3vw" }}
+                styleObj={{
+                  fontSize: "calc(var(--base-font-size) * (2.3 / 2))",
+                  lineHeight: "calc(var(--base-font-size) * (3 / 2))",
+                }}
               />
               <p
-                className="my-4 text-base font-medium md:text-sm sm:!text-xs"
-                style={{ fontSize: "1.3vw", lineHeight: "2.3vw" }}
+                className="my-4 text-base font-medium md:text-sm"
+                style={{
+                  fontSize: "calc(var(--base-font-size) * (1.3 / 2))",
+                  lineHeight: "calc(var(--base-font-size) * (2.5 / 2))",
+                }}
               >
                 With a deep passion for crafting scalable distributed systems
                 and dynamic web applications, I bring ideas to life through code
@@ -62,13 +92,19 @@ export default function Home() {
                   // whileHover={{
                   //   cursor: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='font-size:24px;'><text y='50%'>👆</text></svg>"), auto`,
                   // }}
-                  href="/dummy.pdf"
+                  href="/Tanuj Gupta - Resume.pdf"
                   target={"_blank"}
                   className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
             dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
             md:p-2 md:px-4 md:text-base
              `}
+                  style={{
+                    fontSize: "calc(var(--base-font-size) * (1.3 / 2))",
+                    lineHeight: "calc(var(--base-font-size) * (2.5 / 2))",
+                    padding:
+                      "calc(var(--base-font-size) * (12 / 32)) calc(var(--base-font-size) * (36 / 32))",
+                  }}
                   download
                 >
                   Resume <LinkArrow className="ml-1 !w-6 md:!w-4" />
@@ -78,6 +114,10 @@ export default function Home() {
                   href="mailto:tanujinusa@gmail.com"
                   className="ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base"
+                  style={{
+                    fontSize: "calc(var(--base-font-size) * (1.3 / 2))",
+                    lineHeight: "calc(var(--base-font-size) * (2.5 / 2))",
+                  }}
                 >
                   Contact
                 </Link>
@@ -87,7 +127,13 @@ export default function Home() {
         </Layout>
 
         <HireMe />
-        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
+        <div
+          className="absolute inline-block w-24 md:hidden"
+          style={{
+            bottom: "calc(var(--base-font-size) * (2.5 / 2))",
+            right: "0",
+          }}
+        >
           <Image
             className="relative h-auto w-full"
             src={lightBulb}

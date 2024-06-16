@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profile from "../../public/images/profile/developer-pic-2.jpg";
+import profile from "../../public/images/profile/Grad_photo_compressed.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Skills from "@/components/Skills";
@@ -125,7 +125,7 @@ export default function About() {
               className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row 
             xl:items-center md:order-3"
             >
-              <div className="flex flex-col items-end justify-center xl:items-center">
+              {/* <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumberFramerMotion value={40} />+
                 </span>
@@ -135,7 +135,7 @@ export default function About() {
                 >
                   satisfied clients
                 </h2>
-              </div>
+              </div> */}
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
@@ -163,6 +163,7 @@ export default function About() {
             </div>
           </div>
 
+          <Skills />
           <Skills />
           <Experience />
           <Education />

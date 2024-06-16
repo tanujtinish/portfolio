@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import {
   DribbbleIcon,
   GithubIcon,
+  LeetcodeIcon,
   LinkedInIcon,
   MoonIcon,
   PinterestIcon,
@@ -13,6 +14,7 @@ import {
 } from "./Icons";
 import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
+import { IoMenu } from "react-icons/io5";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -77,9 +79,13 @@ const Navbar = () => {
 
   return (
     <header
-      className="w-full flex items-center justify-between px-32 py-8 font-medium z-10 dark:text-light
+      className="w-full flex items-center justify-between font-medium z-10 dark:text-light
     lg:px-16 relative z-1 md:px-12 sm:px-8
     "
+      style={{
+        padding:
+          "calc(var(--base-font-size) * (24 / 32)) calc(var(--base-font-size) * (24 / 32))",
+      }}
     >
       <button
         type="button"
@@ -87,50 +93,45 @@ const Navbar = () => {
         aria-controls="mobile-menu"
         aria-expanded={isOpen}
         onClick={handleClick}
+        style={{
+          height: "calc(var(--base-font-size) * (36 / 32))",
+          width: "calc(var(--base-font-size) * (36 / 32))",
+        }}
       >
-        <span className="sr-only">Open main menu</span>
-        <span
-          className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
-            isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
-          }`}
-        ></span>
-        <span
-          className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
-            isOpen ? "opacity-0" : "opacity-100"
-          } my-0.5`}
-        ></span>
-        <span
-          className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
-            isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
-          }`}
-        ></span>
+        <IoMenu size={"100%"} />
       </button>
 
-      <div className="w-full flex justify-between items-center lg:hidden">
+      <div
+        className="w-full flex justify-between items-center lg:hidden"
+        style={{ fontSize: "calc(var(--base-font-size) * (1.5 / 2))" }}
+      >
         <nav className="flex items-center justify-center">
           <CustomLink className="mr-4" href="/" title="Home" />
           <CustomLink className="mx-4" href="/about" title="About" />
           <CustomLink className="mx-4" href="/projects" title="Projects" />
+          <CustomLink className="mx-4" href="/experience" title="Experience" />
+          <CustomLink className="mx-4" href="/education" title="Education" />
           {/* <CustomLink className="ml-4" href="/articles" title="Articles" /> */}
         </nav>
         <nav
           className="flex items-center justify-center flex-wrap lg:mt-2
       "
+          style={{ fontSize: "calc(var(--base-font-size) * (1.5 / 2))" }}
         >
-          <motion.a
+          {/* <motion.a
             target={"_blank"}
-            className="w-6 mr-3"
+            className="mr-3"
             href="#"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my twitter profile"
           >
             <TwitterIcon />
-          </motion.a>
+          </motion.a> */}
           <motion.a
             target={"_blank"}
-            className="w-6 mx-3"
-            href="#"
+            className="mx-3"
+            href="https://github.com/tanujtinish"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my github profile"
@@ -139,33 +140,33 @@ const Navbar = () => {
           </motion.a>
           <motion.a
             target={"_blank"}
-            className="w-6 mx-3"
-            href="#"
+            className="mx-3"
+            href="https://www.linkedin.com/in/tanuj-gupta-57b869168/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my linkedin profile"
           >
             <LinkedInIcon />
           </motion.a>
-          <motion.a
+          {/* <motion.a
             target={"_blank"}
-            className="w-6 mx-3 bg-light rounded-full"
+            className="mx-3 bg-light rounded-full"
             href="#"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my pinterest profile"
           >
             <PinterestIcon />
-          </motion.a>
+          </motion.a> */}
           <motion.a
             target={"_blank"}
-            className="w-6 mx-3"
-            href="#"
+            className="mx-3"
+            href="https://leetcode.com/u/tanuj_gupta/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my dribbble profile"
+            aria-label="Checkout my leetcode profile"
           >
-            <DribbbleIcon />
+            <LeetcodeIcon />
           </motion.a>
 
           <button
