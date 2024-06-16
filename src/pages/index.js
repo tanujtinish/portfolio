@@ -9,7 +9,7 @@ import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import profilePic from "../../public/images/profile/profile_pic_2.jpeg";
 
 import TransitionEffect from "@/components/TransitionEffect";
-import useIsMobile from "@/components/Hooks/UseIsMobile";
+import useIsMobile from "../components/Hooks/useIsMobile";
 
 export default function Home() {
   const isMobile = useIsMobile();
