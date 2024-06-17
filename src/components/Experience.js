@@ -2,7 +2,15 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({
+  position,
+  company,
+  companyLink,
+  time,
+  address,
+  teamDetails,
+  role,
+}) => {
   const ref = useRef(null);
   return (
     <li
@@ -28,7 +36,20 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full md:text-sm"> {work}</p>
+        <p
+          className="font-medium w-full md:text-sm"
+          style={{ marginTop: "calc(var(--base-font-size) * (10 / 32))" }}
+        >
+          {" "}
+          {teamDetails}
+        </p>
+        <p
+          className="font-medium w-full md:text-sm"
+          style={{ marginTop: "calc(var(--base-font-size) * (10 / 32))" }}
+        >
+          {" "}
+          {role}
+        </p>
       </motion.div>
     </li>
   );
@@ -61,7 +82,8 @@ const Experience = ({ styleObj }) => {
             companyLink="https://www.metajungle.io/"
             time="2023-Present"
             address="Springfiled, MO"
-            work="Leading a backend team of four engineers to develop a groundbreaking one-stop portal where people can interact with their NFTs by aggregating data from various marketplaces, blockchains, and Internet.."
+            teamDetails="Worked in a team of seven engineers responsible for developing a groundbreaking one-stop portal where people can interact with their NFTs by aggregating data from various marketplaces, blockchains, and the Internet."
+            role="As the team lead and founding software engineer, I led the backend development using Next JS, Node JS, Web3.JS, and Solidity, among other technologies."
           />
 
           <Details
@@ -70,7 +92,8 @@ const Experience = ({ styleObj }) => {
             companyLink="https://facebook.com"
             time="Summer 2022"
             address="Menlo Park, CA."
-            work="I worked as a full-stack developer with FB4: Business Growth team. Developed two end-to-end applications in React JS and Hack PHP to carry the Profile to Profile+ transition on the Facebook app."
+            teamDetails="Worked in the FB Business Growth team responsible for helping businesses grow their presence on the Facebook platform by facilitating the transition to Profile+."
+            role="As a full stack developer intern, I developed two end-to-end applications using React JS and Hack PHP to support the Profile to Profile+ transition on the Facebook app. My contributions were crucial in helping notification owners transfer their notifications to the new Profile+ page, enhancing the integration of profiles and pages."
           />
 
           <Details

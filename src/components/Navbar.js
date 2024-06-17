@@ -108,7 +108,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-center">
           <CustomLink className="mr-4" href="/" title="Home" />
           <CustomLink className="mx-4" href="/about" title="About" />
-          <CustomLink className="mx-4" href="/projects" title="Projects" />
+          {/* <CustomLink className="mx-4" href="/projects" title="Projects" /> */}
           <CustomLink className="mx-4" href="/experience" title="Experience" />
           <CustomLink className="mx-4" href="/education" title="Education" />
           {/* <CustomLink className="ml-4" href="/articles" title="Articles" /> */}
