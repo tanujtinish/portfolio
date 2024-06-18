@@ -25,8 +25,11 @@ const Skills = ({ styleObj }) => {
   return (
     <>
       <h2
-        className="font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32"
-        style={{ ...styleObj }}
+        className="font-bold text-8xl  w-full text-center"
+        style={{
+          marginTop: "calc(var(--base-font-size) * 5)",
+          ...styleObj,
+        }}
       >
         Skills
       </h2>
@@ -34,10 +37,13 @@ const Skills = ({ styleObj }) => {
       <div
         ref={ref}
         className="w-full h-[100vh] relative bg-circularLight dark:bg-circularDark  flex items-center justify-center 
-      mb-64 md:mb-32 rounded-full
+       rounded-full
       lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd 
       sm:bg-circularLightSm sm:dark:bg-circularDarkSm lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
       "
+        style={{
+          marginTop: "calc(var(--base-font-size) * 3)",
+        }}
       >
         <motion.div
           whileHover={{ scale: 1.05 }}
@@ -69,10 +75,13 @@ const Skills = ({ styleObj }) => {
       <div
         ref={ref}
         className="w-full h-[100vh] relative bg-circularLight dark:bg-circularDark  flex items-center justify-center 
-      mb-64 md:mb-32 rounded-full
+       rounded-full
       lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd 
       sm:bg-circularLightSm sm:dark:bg-circularDarkSm lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
       "
+        style={{
+          marginTop: "calc(var(--base-font-size) * 3)",
+        }}
       >
         <motion.div
           whileHover={{ scale: 1.05 }}
@@ -105,12 +114,13 @@ const Skills = ({ styleObj }) => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          marginTop: "calc(var(--base-font-size) * 3)",
         }}
       >
         <div
           ref={ref}
           className="w-[45%] h-[70vh] relative bg-circularLight dark:bg-circularDark  flex items-center justify-center 
-      mb-64 md:mb-32 rounded-full
+       rounded-full
       lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd 
       sm:bg-circularLightSm sm:dark:bg-circularDarkSm lg:h-[60vh] sm:h-[50vh] xs:h-[40vh] 
       "
@@ -134,7 +144,7 @@ const Skills = ({ styleObj }) => {
         <div
           ref={ref}
           className="w-[45%] h-[70vh] relative bg-circularLight dark:bg-circularDark  flex items-center justify-center 
-      mb-64 md:mb-32 rounded-full
+       rounded-full
       lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd 
       sm:bg-circularLightSm sm:dark:bg-circularDarkSm lg:h-[60vh] sm:h-[50vh] xs:h-[40vh] 
       "

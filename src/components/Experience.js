@@ -20,7 +20,7 @@ const Details = ({
       return (
         <ul className="list-disc pl-5">
           {roleDetails.map((item, index) => (
-            <li key={index} className="font-medium w-full md:text-sm">
+            <li key={index} className="w-full ">
               {item}
             </li>
           ))}
@@ -41,7 +41,10 @@ const Details = ({
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+        <h3
+          className="capitalize font-bold"
+          style={{ fontSize: "calc(var(--base-font-size) * (23 / 32))" }}
+        >
           {position}{" "}
           <a
             className="capitalize text-primary dark:text-primaryDark"
@@ -51,32 +54,47 @@ const Details = ({
             @{company}
           </a>
         </h3>
-        <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm">
+        <span
+          className="capitalize text-dark/75 dark:text-light/50"
+          style={{ fontSize: "calc(var(--base-font-size) * (14 / 32))" }}
+        >
           {time} | {address}
         </span>
         <div
-          className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm"
-          style={{ marginTop: "calc(var(--base-font-size) * (3 / 32))" }}
+          className="capitalize text-dark/75 dark:text-light/50"
+          style={{
+            marginTop: "calc(var(--base-font-size) * (3 / 32))",
+            fontSize: "calc(var(--base-font-size) * (14 / 32))",
+          }}
         >
           {techStack}
         </div>
         <p
-          className="font-medium w-full md:text-sm"
-          style={{ marginTop: "calc(var(--base-font-size) * (5 / 32))" }}
+          className="w-full "
+          style={{
+            marginTop: "calc(var(--base-font-size) * (5 / 32))",
+            fontSize: "calc(var(--base-font-size) * (14 / 32))",
+          }}
         >
           {" "}
           {teamDetails}
         </p>
         <p
-          className="font-medium w-full md:text-sm"
-          style={{ marginTop: "calc(var(--base-font-size) * (10 / 32))" }}
+          className="w-full "
+          style={{
+            marginTop: "calc(var(--base-font-size) * (10 / 32))",
+            fontSize: "calc(var(--base-font-size) * (14 / 32))",
+          }}
         >
           {" "}
           {role}
         </p>
         <p
-          className="font-medium w-full md:text-sm"
-          style={{ marginTop: "calc(var(--base-font-size) * (10 / 32))" }}
+          className="w-full "
+          style={{
+            marginTop: "calc(var(--base-font-size) * (10 / 32))",
+            fontSize: "calc(var(--base-font-size) * (14 / 32))",
+          }}
         >
           {" "}
           {renderRole({ roleDetails })}
@@ -95,7 +113,7 @@ const Experience = ({ styleObj }) => {
   });
 
   return (
-    <div className="my-64" style={{ ...styleObj }}>
+    <div style={{ marginTop: "calc(var(--base-font-size) * 5)", ...styleObj }}>
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
         Experience
       </h2>

@@ -62,10 +62,15 @@ export default function About() {
               className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 
             md:col-span-8"
             >
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+              <div
+                className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75"
+                style={{ fontSize: "calc(var(--base-font-size) * (32 / 32))" }}
+              >
                 BIOGRAPHY
-              </h2>
-              <p className="font-medium ">
+              </div>
+              <p
+                style={{ fontSize: "calc(var(--base-font-size) * (16 / 32))" }}
+              >
                 Hi, I&apos;m <strong>Tanuj Gupta</strong>, a software engineer
                 specializing in building large-scale distributed systems. As a
                 Founding Software Engineer at Metajungle since 2023, I have been
@@ -77,7 +82,10 @@ export default function About() {
                 transactions and billions of log data on the Ethereum
                 blockchain.
               </p>
-              <p className="my-4 font-medium">
+              <p
+                className="my-4"
+                style={{ fontSize: "calc(var(--base-font-size) * (16 / 32))" }}
+              >
                 I possess a strong command of full-stack development,
                 particularly with the MERN stack, leveraging React and Node.js.
                 My experience extends to using Spring Boot for backend
@@ -88,7 +96,9 @@ export default function About() {
                 Life, where I honed my skills and contributed to a variety of
                 challenging projects.
               </p>
-              <p className="font-medium">
+              <p
+                style={{ fontSize: "calc(var(--base-font-size) * (16 / 32))" }}
+              >
                 In general, My passion lies in designing large-scale, complex
                 systems that are both fast and fault-tolerant. A graduate of
                 UCSC with an exceptional 4+/4 GPA, I possess a keen
