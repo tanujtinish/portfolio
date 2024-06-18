@@ -8,10 +8,28 @@ const Details = ({
   companyLink,
   time,
   address,
+  techStack,
   teamDetails,
   role,
+  roleDetails,
 }) => {
   const ref = useRef(null);
+
+  const renderRole = ({ roleDetails }) => {
+    if (Array.isArray(roleDetails)) {
+      return (
+        <ul className="list-disc pl-5">
+          {roleDetails.map((item, index) => (
+            <li key={index} className="font-medium w-full md:text-sm">
+              {item}
+            </li>
+          ))}
+        </ul>
+      );
+    }
+    return <></>;
+  };
+
   return (
     <li
       ref={ref}
@@ -36,9 +54,15 @@ const Details = ({
         <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm">
           {time} | {address}
         </span>
+        <div
+          className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm"
+          style={{ marginTop: "calc(var(--base-font-size) * (3 / 32))" }}
+        >
+          {techStack}
+        </div>
         <p
           className="font-medium w-full md:text-sm"
-          style={{ marginTop: "calc(var(--base-font-size) * (10 / 32))" }}
+          style={{ marginTop: "calc(var(--base-font-size) * (5 / 32))" }}
         >
           {" "}
           {teamDetails}
@@ -49,6 +73,13 @@ const Details = ({
         >
           {" "}
           {role}
+        </p>
+        <p
+          className="font-medium w-full md:text-sm"
+          style={{ marginTop: "calc(var(--base-font-size) * (10 / 32))" }}
+        >
+          {" "}
+          {renderRole({ roleDetails })}
         </p>
       </motion.div>
     </li>
@@ -82,8 +113,16 @@ const Experience = ({ styleObj }) => {
             companyLink="https://www.metajungle.io/"
             time="2023-Present"
             address="Springfiled, MO"
+            techStack={
+              "Next JS, Node JS, Web3.JS, Solidity, Hadoop, MongoDB, Cassandra, Airflow, AWS ECS, Elastic Search, Jenkins"
+            }
             teamDetails="Worked in a team of seven engineers responsible for developing a groundbreaking one-stop portal where people can interact with their NFTs by aggregating data from various marketplaces, blockchains, and the Internet."
-            role="As the team lead and founding software engineer, I led the backend development using Next JS, Node JS, Web3.JS, and Solidity, among other technologies."
+            role="As the team lead and founding software engineer, I have:"
+            roleDetails={[
+              "Designed storage layer for efficient storage and querying of 17 million blockchain transaction ",
+              "Built a system for aggregating NFT data from blockchains and the internet at the scale of million operations a day",
+              "Lead the backend development for http and websocket based API's using Next JS, Node JS, Web3.JS, and Solidity, among other technologies",
+            ]}
           />
 
           <Details
@@ -92,8 +131,15 @@ const Experience = ({ styleObj }) => {
             companyLink="https://facebook.com"
             time="Summer 2022"
             address="Menlo Park, CA."
+            techStack={
+              "React JS, XHP, GraphQL, XControllers, Hack PHP, MySQL, Scuba, Presto, ODS(Time series), Data Swarm"
+            }
             teamDetails="Worked in the FB Business Growth team responsible for helping businesses grow their presence on the Facebook platform by facilitating the transition to Profile+."
-            role="As a full stack developer intern, I developed two end-to-end applications using React JS and Hack PHP to support the Profile to Profile+ transition on the Facebook app. My contributions were crucial in helping notification owners transfer their notifications to the new Profile+ page, enhancing the integration of profiles and pages."
+            role="As a full stack developer intern, I:"
+            roleDetails={[
+              "Developed two end-to-end applications using React JS and Hack PHP to support the Profile to Profile+ transition on the Facebook app.",
+              "Build data pipelines using the Data Swarm framework to create smaller aggregated tables to reduce GraphQL response time.",
+            ]}
           />
 
           <Details
@@ -102,7 +148,15 @@ const Experience = ({ styleObj }) => {
             companyLink="https://www.airtel.in/"
             time="2020-2021"
             address="Gurgaon, India."
-            work="Led development and maintenance of FTTH(Fiber To The Home) project spanning three microservices. Collaborated with a cross-functional team of 10 to design an end-to-end backend system."
+            techStack={
+              "Java, Java Spring Boot, Kafka, Postgres, Drool, Maven, and Gradle"
+            }
+            teamDetails="Worked in the FTTH (Fiber To The Home) team responsible for building tools to track the development and deployment of FTTH optic fibers across India."
+            role="I collaborated with a cross-functional team of 10 to design an end-to-end backend system. My contributions included."
+            roleDetails={[
+              "Led development and maintenance of FTTH(Fiber To The Home) project spanning three microservices using Java Spring Boot.",
+              "Introduced Kafka-based microservice orchestration to streamline communication between microservices.",
+            ]}
           />
 
           <Details
@@ -111,7 +165,16 @@ const Experience = ({ styleObj }) => {
             companyLink="https://www.oyorooms.com"
             time="2019-2020"
             address="Gurgaon, India."
-            work="Member of ​Data Platform ​team - Owner of Hive-based data lake for the entire organization."
+            techStack={
+              "Java, Scala, Spark, Kafka, Python, Presto, Hive, AWS S3, Hadoop, and Airflow"
+            }
+            teamDetails="Worked in the Data Platform team responsible for managing the Hive-based data lake for the entire organization."
+            role="As the owner of the Hive-based data lake, I developed and maintained end-to-end big data pipelines, both batch and real-time, to synchronize data from various microservices into the data lake for analysis."
+            roleDetails={[
+              "Optimized data lake UPSERT efficiency using Apache Hudi and AWS S3-based Bloom Filters for reduced SLA.",
+              "Developed APIs and wrappers in Java Spring Boot enabling seamless data migration between sources for developers.",
+              "Migrated Kafka and Airflow clusters to Kubernetes to optimize AWS resource use by 20% and cost by $40 a day.",
+            ]}
           />
 
           <Details
@@ -120,7 +183,9 @@ const Experience = ({ styleObj }) => {
             companyLink="https://www.hdfclife.com/"
             time="Jan 2019- June 2019"
             address="Mumbai, India."
-            work="Designed and developed a highly responsive HR portal using React JS and Node JS."
+            techStack={"React JS, Node JS, AWS"}
+            teamDetails="Worked in the ADCT team, a new tech team at HDFC Life, responsible for building technology solutions to streamline the life insurance process."
+            role="Developed user-friendly interfaces in React JS for life insurance applications to enhance the user experience and streamline the insurance process."
           />
         </ul>
       </div>

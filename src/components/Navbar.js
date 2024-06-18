@@ -111,6 +111,7 @@ const Navbar = () => {
           {/* <CustomLink className="mx-4" href="/projects" title="Projects" /> */}
           <CustomLink className="mx-4" href="/experience" title="Experience" />
           <CustomLink className="mx-4" href="/education" title="Education" />
+          <CustomLink className="mx-4" href="/skills" title="Skills" />
           {/* <CustomLink className="ml-4" href="/articles" title="Articles" /> */}
         </nav>
         <nav
@@ -118,16 +119,6 @@ const Navbar = () => {
       "
           style={{ fontSize: "calc(var(--base-font-size) * (1.5 / 2))" }}
         >
-          {/* <motion.a
-            target={"_blank"}
-            className="mr-3"
-            href="#"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my twitter profile"
-          >
-            <TwitterIcon />
-          </motion.a> */}
           <motion.a
             target={"_blank"}
             className="mx-3"
@@ -148,16 +139,6 @@ const Navbar = () => {
           >
             <LinkedInIcon />
           </motion.a>
-          {/* <motion.a
-            target={"_blank"}
-            className="mx-3 bg-light rounded-full"
-            href="#"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my pinterest profile"
-          >
-            <PinterestIcon />
-          </motion.a> */}
           <motion.a
             target={"_blank"}
             className="mx-3"
@@ -206,7 +187,7 @@ const Navbar = () => {
               href="/about"
               title="About"
             />
-            <CustomMobileLink
+            {/* <CustomMobileLink
               toggle={handleClick}
               className="mx-4 lg:m-0 lg:my-2"
               href="/projects"
@@ -217,6 +198,24 @@ const Navbar = () => {
               className="ml-4 lg:m-0 lg:my-2"
               href="/articles"
               title="Articles"
+            /> */}
+            <CustomMobileLink
+              toggle={handleClick}
+              className="mx-4 lg:m-0 lg:my-2"
+              href="/experience"
+              title="Experience"
+            />
+            <CustomMobileLink
+              toggle={handleClick}
+              className="mx-4 lg:m-0 lg:my-2"
+              href="/education"
+              title="Education"
+            />
+            <CustomMobileLink
+              toggle={handleClick}
+              className="mx-4 lg:m-0 lg:my-2"
+              href="/skills"
+              title="Skills"
             />
           </nav>
           <nav
@@ -226,17 +225,7 @@ const Navbar = () => {
             <motion.a
               target={"_blank"}
               className="w-6 m-1 mr-3 sm:mx-1"
-              href="#"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my twitter profile"
-            >
-              <TwitterIcon />
-            </motion.a>
-            <motion.a
-              target={"_blank"}
-              className="w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
-              href="#"
+              href="https://github.com/tanujtinish"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Checkout my github profile"
@@ -245,8 +234,8 @@ const Navbar = () => {
             </motion.a>
             <motion.a
               target={"_blank"}
-              className="w-6 m-1 mx-3 sm:mx-1"
-              href="#"
+              className="w-6 m-1 mr-3 sm:mx-1"
+              href="https://www.linkedin.com/in/tanuj-gupta-57b869168/"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Checkout my linkedin profile"
@@ -255,23 +244,13 @@ const Navbar = () => {
             </motion.a>
             <motion.a
               target={"_blank"}
-              className="w-6 m-1 mx-3 bg-light rounded-full sm:mx-1"
-              href="#"
+              className="w-6 m-1 mr-3 sm:mx-1"
+              href="https://leetcode.com/u/tanuj_gupta/"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my pinterest profile"
+              aria-label="Checkout my leetcode profile"
             >
-              <PinterestIcon />
-            </motion.a>
-            <motion.a
-              target={"_blank"}
-              className="w-6 m-1 mx-3 sm:mx-1"
-              href="#"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my dribbble profile"
-            >
-              <DribbbleIcon />
+              <LeetcodeIcon />
             </motion.a>
 
             <button
