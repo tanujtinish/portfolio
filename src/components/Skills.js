@@ -63,26 +63,32 @@ const Skills = ({ styleObj }) => {
 
         {isMobile ? (
           <>
-            <Skill name="Rest APIs" x="-30vw" y="3vw" />
-            <Skill name="AWS" x="24vw" y="-3vw" />
-            <Skill name="GraphQL" x="-7.5vw" y="-15vw" />
-            <Skill name="Kubernetes/ECS" x="30vw" y="9vw" />
+            <Skill name="Design Patterns" x="-20vw" y="-55vw" />
+            <Skill name="MultiThreadings" x="20vw" y="-55vw" />
 
-            <Skill name="Dockers" x="52.5vw" y="12vw" />
+            <Skill name="DSA" x="15vw" y="-35vw" />
+            <Skill name="Cassandra" x="-15vw" y="-35vw" />
 
-            <Skill name="Node JS" x="0vw" y="18vw" />
-            <Skill name="Spring Boot" x="-30vw" y="-22.5vw" />
-            <Skill name="Design Patterns" x="20vw" y="--13.5vw" />
-            <Skill name="DSA" x="-52.5vw" y="-7.5vw" />
-            <Skill name="Redis" x="48vw" y="-7.5vw" />
-            <Skill name="MultiThreadings" x="0vw" y="-30vw" />
-            <Skill name="MongoDB" x="-37.5vw" y="27vw" />
-            <Skill name="Postgres" x="30vw" y="-22.5vw" />
+            <Skill name="GraphQL" x="30vw" y="-19.5vw" />
 
-            <Skill name="Kafka" x="42vw" y="27vw" />
+            <Skill name="Spring Boot" x="-30vw" y="-19.5vw" />
 
-            <Skill name="Distributed Systems" x="0vw" y="31.5vw" />
-            <Skill name="Cassandra" x="-52.5vw" y="9vw" />
+            <Skill name="Kubernetes/ECS" x="0.5vw" y="-12vw" />
+
+            <Skill name="AWS" x="38vw" y="0vw" />
+            <Skill name="Rest APIs" x="-38vw" y="0vw" />
+
+            <Skill name="Dockers" x="0.5vw" y="12vw" />
+
+            <Skill name="MongoDB" x="-30vw" y="19.5vw" />
+
+            <Skill name="Postgres" x="30vw" y="19.5vw" />
+
+            <Skill name="Redis" x="-15vw" y="35vw" />
+            <Skill name="Kafka" x="15vw" y="35vw" />
+
+            <Skill name="Node JS" x="20vw" y="55vw" />
+            <Skill name="Distributed Systems" x="-20vw" y="55vw" />
           </>
         ) : (
           <>
@@ -129,25 +135,31 @@ const Skills = ({ styleObj }) => {
         "
           style={{ maxWidth: "10em" }}
         >
-          Data Engineering / MLOps
+          {isMobile ? "DataEng/MLOps" : "Data Engineering / MLOps"}
         </motion.div>
 
         {isMobile ? (
           <>
-            <Skill name="AWS" x="-30vw" y="3vw" />
-            <Skill name="LangChain" x="24vw" y="-3vw" />
-            <Skill name="Airflow" x="-7.5vw" y="-15vw" />
-            <Skill name="Spark" x="30vw" y="9vw" />
-            <Skill name="Hadoop" x="0vw" y="18vw" />
-            <Skill name="ETL" x="-30vw" y="-22.5vw" />
-            <Skill name="Hive" x="22.5vw" y="-18vw" />
-            <Skill name="Presto" x="-52.5vw" y="-7.5vw" />
-            <Skill name="Transformers" x="48vw" y="-7.5vw" />
-            <Skill name="Fine Tuning LLM's" x="0vw" y="-30vw" />
-            <Skill name="RAG Systems" x="-37.5vw" y="27vw" />
-            <Skill name="Kafka" x="42vw" y="27vw" />
-            <Skill name="Deep Learning Fundamentals" x="0vw" y="31.5vw" />
-            <Skill name="Pinecone" x="-52.5vw" y="9vw" />
+            <Skill name="LangChain" x="-20vw" y="-55vw" />
+            <Skill name="Airflow" x="20vw" y="-55vw" />
+
+            <Skill name="Spark" x="15vw" y="-35vw" />
+            <Skill name="Hadoop" x="-15vw" y="-35vw" />
+
+            <Skill name="Transformers" x="30vw" y="-19.5vw" />
+            <Skill name="Pinecone" x="-30vw" y="-19.5vw" />
+
+            <Skill name="ETL" x="38vw" y="0vw" />
+            <Skill name="Hive" x="-38vw" y="0vw" />
+
+            <Skill name="Kafka" x="-30vw" y="19.5vw" />
+
+            <Skill name="LLM Fine Tuning" x="30vw" y="19.5vw" />
+
+            <Skill name="Deep Learning Fundamentals" x="-0vw" y="35vw" />
+
+            <Skill name="Presto" x="20vw" y="55vw" />
+            <Skill name="RAG Systems" x="-20vw" y="55vw" />
           </>
         ) : (
           <>
