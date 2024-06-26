@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://portfolio-tanuj.vercel.app
+
+# Sitemaps
+Sitemap: https://portfolio-tanuj.vercel.app/sitemap.xml
