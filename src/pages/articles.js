@@ -2,7 +2,7 @@ import AnimatedText from "@/components/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
-import blog1 from "../../public/images/articles/pagination component in reactjs.jpg";
+import blog1 from "../../public/images/articles/bc_data_for_your_app.png";
 import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
 import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
 import blog4 from "../../public/images/articles/smooth scrolling in reactjs.png";
@@ -152,21 +152,16 @@ export default function Articles() {
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               img={blog1}
-              title="build a custom pagination component in reactjs from scratch"
-              time="9 min read"
-              summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this 
-              step-by-step guide to integrate Pagination component in your ReactJS project."
-              link="https://devdreaming.com/blogs/create-pagination-component-reactjs"
+              title="Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products"
+              summary="Learn how to understand data on Ethereum Blockchain and how to power your app with blockchain data at high speed."
+              link="https://medium.com/@tanujinusa/art-of-mastering-ethereum-transactions-high-speed-blockchain-data-for-your-products-5c1aa3e28136"
             />
 
             <FeaturedArticle
-              img={blog2}
-              title="creating stunning loading screens in react: Build 3 types of loading screens"
-              time="10 min read"
-              summary="Learn how to create stunning loading screens in React with 3 different methods. 
-              Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the 
-              user experience."
-              link="https://devdreaming.com/blogs/create-3-different-types-of-loading-screens-in-react"
+              img={blog1}
+              title="Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products"
+              summary="Learn how to understand data on Ethereum Blockchain and how to power your app with blockchain data at high speed."
+              link="https://medium.com/@tanujinusa/art-of-mastering-ethereum-transactions-high-speed-blockchain-data-for-your-products-5c1aa3e28136"
             />
           </ul>
 
@@ -176,40 +171,11 @@ export default function Articles() {
 
           <ul className="flex flex-col items-center relative">
             <Article
-              title="form validation in reactjs: build a reusable custom hook for inputs and error handling"
-              img={blog3}
               date="January 27, 2023"
-              link="https://devdreaming.com/blogs/react-form-validation-custom-hook"
-            />
-            <Article
-              title="silky smooth scrolling in reactjs: a step-by-step guide for react developers"
-              img={blog4}
-              date="January 30, 2023"
-              link="https://devdreaming.com/blogs/smooth-scrolling-in-react-js"
-            />
-            <Article
-              title="creating an efficient modal component in react using hooks and portals"
-              img={blog5}
-              date="January 29, 2023"
-              link="https://devdreaming.com/blogs/create-efficient-modal-react-portals"
-            />
-            <Article
-              title="build a fabulous todo list app with react, redux and framer-motion"
-              img={blog6}
-              date="January 28, 2023"
-              link="https://devdreaming.com/blogs/build-react-redux-framer-motion-todo-app"
-            />
-            <Article
-              title="redux simplified: a beginner's guide for web developers"
-              img={blog7}
-              date="January 31, 2023"
-              link="https://devdreaming.com/blogs/redux-simply-explained"
-            />
-            <Article
-              title="what is higher order component (hoc) in react?"
-              date="January 4, 2023"
-              img={blog8}
-              link="https://devdreaming.com/blogs/higher-order-component-hoc-react"
+              img={blog1}
+              title="Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products"
+              summary="Learn how to understand data on Ethereum Blockchain and how to power your app with blockchain data at high speed."
+              link="https://medium.com/@tanujinusa/art-of-mastering-ethereum-transactions-high-speed-blockchain-data-for-your-products-5c1aa3e28136"
             />
           </ul>
         </Layout>

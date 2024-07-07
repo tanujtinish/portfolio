@@ -139,7 +139,10 @@ const Experience = ({ styleObj }) => {
             roleDetails={[
               "Designed storage layer for efficient storage and querying of 17 million blockchain transaction ",
               "Built a system for aggregating NFT data from blockchains and the internet at the scale of million operations a day",
-              "Lead the backend development for http and websocket based API's using Next JS, Node JS, Web3.JS, and Solidity, among other technologies",
+              "Lead the backend development for http and websocket based API's using Next JS, Node JS, Kafka Queue, Web3.JS, and Solidity, among other technologies",
+              "Implemented AWS Based cloud infrastructure as code using Terraform with services like ECS, ELB, ASG, etc",
+              "Developed Chat Service for all pages on Metajungle using WebSockets, load balancers, change streams, and Kafka queue.",
+              "Developed an advanced (RAG) system to dynamically enhance NFT data generation, significantly improving the accuracy and depth of information available to customers for making informed decisions",
             ]}
           />
 
