@@ -3,7 +3,7 @@ import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import blog1 from "../../public/images/articles/bc_data_for_your_app.png";
-import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
+import blog2 from "../../public/images/articles/ethereum_part_1.png";
 import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
 import blog4 from "../../public/images/articles/smooth scrolling in reactjs.png";
 import blog5 from "../../public/images/articles/create modal component in react using react portals.png";
@@ -158,7 +158,7 @@ export default function Articles() {
             />
 
             <FeaturedArticle
-              img={blog1}
+              img={blog2}
               title="Part 1: Getting Started with Ethereum: Key Concepts and Basics"
               summary="Welcome to Part 1 of our series, “Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products.” This part serves as a foundational introduction to Ethereum, covering its core concepts and basics. While this article is part of a larger series, it can also be learned separately to gain a solid understanding of Ethereum’s fundamental principles."
               link="https://medium.com/@tanujinusa/part-1-getting-started-with-ethereum-key-concepts-and-basics-1270e2091fb3"
