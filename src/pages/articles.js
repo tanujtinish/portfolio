@@ -159,9 +159,9 @@ export default function Articles() {
 
             <FeaturedArticle
               img={blog1}
-              title="Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products"
-              summary="Learn how to understand data on Ethereum Blockchain and how to power your app with blockchain data at high speed."
-              link="https://medium.com/@tanujinusa/art-of-mastering-ethereum-transactions-high-speed-blockchain-data-for-your-products-5c1aa3e28136"
+              title="Part 1: Getting Started with Ethereum: Key Concepts and Basics"
+              summary="Welcome to Part 1 of our series, “Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products.” This part serves as a foundational introduction to Ethereum, covering its core concepts and basics. While this article is part of a larger series, it can also be learned separately to gain a solid understanding of Ethereum’s fundamental principles."
+              link="https://medium.com/@tanujinusa/part-1-getting-started-with-ethereum-key-concepts-and-basics-1270e2091fb3"
             />
           </ul>
 
