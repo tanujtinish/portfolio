@@ -24,7 +24,7 @@ export default function Dance({ styleObj }) {
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            justifyContent: "flex-start",
+            justifyContent: "space-around",
 
             overflowX: "auto",
             width: "100%",
