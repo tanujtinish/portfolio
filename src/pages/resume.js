@@ -2,7 +2,7 @@ import PdfViewer from "@/components/common/PdfViewer";
 import Layout from "@/components/Layout";
 import TransitionEffect from "@/components/TransitionEffect";
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function resume() {
   return (
