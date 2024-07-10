@@ -10,6 +10,9 @@ import Education from "@/components/Education";
 import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
 
+import ScrollableContainerHorizontal from "@/components/common/ScrollableContainerHorizontal";
+import Dance from "@/components/Dance";
+
 function AnimatedNumberFramerMotion({ value }) {
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
@@ -176,6 +179,8 @@ export default function About() {
           <Skills />
           <Experience />
           <Education />
+
+          <Dance />
         </Layout>
       </main>
     </>

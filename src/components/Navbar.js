@@ -16,6 +16,7 @@ import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
 import { IoMenu } from "react-icons/io5";
 import useIsMobile from "./Hooks/useIsMobile";
+import { FaInstagram } from "react-icons/fa";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -173,6 +174,16 @@ const Navbar = () => {
           >
             <LeetcodeIcon />
           </motion.a>
+          <motion.a
+            target={"_blank"}
+            className="m-1 mr-3 sm:mx-1"
+            href="https://www.instagram.com/tanuj._.gupta/"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            aria-label="Checkout my Instagram profile"
+          >
+            <FaInstagram size="1em" color={mode === "dark" ? "pink" : ""} />
+          </motion.a>
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -256,6 +267,12 @@ const Navbar = () => {
               href="/skills"
               title="Skills"
             />
+            <CustomMobileLink
+              toggle={handleClick}
+              className=""
+              href="/articles"
+              title="Articles"
+            />
           </nav>
           <nav
             className="flex items-center justify-center  mt-2
@@ -302,6 +319,22 @@ const Navbar = () => {
               }}
             >
               <LeetcodeIcon />
+            </motion.a>
+            <motion.a
+              target={"_blank"}
+              className="m-1 mr-3 sm:mx-1"
+              href="https://www.instagram.com/tanuj._.gupta/"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Checkout my Instagram profile"
+              style={{
+                fontSize: "calc(var(--base-font-size) * 40/32)",
+              }}
+            >
+              <FaInstagram
+                size="1em"
+                color={mode === "dark" ? "black" : "pink"}
+              />
             </motion.a>
 
             <button

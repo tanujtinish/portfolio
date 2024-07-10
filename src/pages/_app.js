@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
+import "@/styles/common/ScrollableContainerHorizontal.css";
 import { AnimatePresence } from "framer-motion";
 // pages/_app.js
 import { Montserrat } from "next/font/google";
@@ -17,7 +18,10 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-site-verification" content="25ajFD45-w6LtR7u4P_2vUpN0NtyUz4Y1faXgvOXzDg" />
+        <meta
+          name="google-site-verification"
+          content="25ajFD45-w6LtR7u4P_2vUpN0NtyUz4Y1faXgvOXzDg"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main

@@ -10,6 +10,7 @@ import profilePic from "../../public/images/profile/profile_pic_2.jpeg";
 
 import TransitionEffect from "@/components/TransitionEffect";
 import useIsMobile from "../components/Hooks/useIsMobile";
+import Dance from "@/components/Dance";
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -141,6 +142,7 @@ export default function Home() {
           />
         </div>
       </article>
+      <Dance styleObj={{ marginTop: "0" }} />
     </>
   );
 }
