@@ -29,7 +29,7 @@ export default function Home() {
 
       <TransitionEffect />
       <article
-        className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
+        className={`flex  items-center text-dark dark:text-light sm:items-start`}
         style={{ position: "relative" }}
       >
         <Layout
