@@ -93,6 +93,11 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
     <li
       className="relative w-full p-4 col-span-1 bg-light border border-dark border-solid rounded-2xl 
     dark:bg-dark dark:border-light"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}
     >
       <div
         className="absolute  top-0 -right-3 w-[102%] h-[103%] rounded-[2rem]  rounded-br-3xl bg-dark 
@@ -101,7 +106,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
       <Link
         href={link}
         target={"_blank"}
-        className="inline-block rounded-lg overflow-hidden w-full"
+        className="d-flex inline-block rounded-lg overflow-hidden w-full"
       >
         <FramerImage
           src={img}
@@ -118,11 +123,11 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg">
           {title}
         </h2>
+        <p className="text-sm  mb-2">{summary}</p>
+        <span className="text-primary font-semibold dark:text-primaryDark">
+          {time}
+        </span>
       </Link>
-      <p className="text-sm  mb-2">{summary}</p>
-      <span className="text-primary font-semibold dark:text-primaryDark">
-        {time}
-      </span>
     </li>
   );
 };
@@ -170,7 +175,7 @@ export default function Articles() {
           </h2>
 
           <ul className="flex flex-col items-center relative">
-            <FeaturedArticle
+            <Article
               date="July 1, 2023"
               img={blog1}
               title="Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products"
@@ -178,7 +183,7 @@ export default function Articles() {
               link="https://medium.com/@tanujinusa/art-of-mastering-ethereum-transactions-high-speed-blockchain-data-for-your-products-5c1aa3e28136"
             />
 
-            <FeaturedArticle
+            <Article
               date="July 8, 2024"
               img={blog2}
               title="Part 1: Demystifying Ethereum: Transactions, Account States, Transaction Types, and Events"
@@ -186,7 +191,7 @@ export default function Articles() {
               link="https://medium.com/@tanujinusa/part-1-getting-started-with-ethereum-key-concepts-and-basics-1270e2091fb3"
             />
 
-            <FeaturedArticle
+            <Article
               date="July 21, 2024"
               img={blog2}
               title="Part 2: Ethereum Blockchain: Understanding State Maintenance, Consensus, Block Addition, and Forking"
