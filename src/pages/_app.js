@@ -22,6 +22,10 @@ export default function App({ Component, pageProps }) {
           name="google-site-verification"
           content="25ajFD45-w6LtR7u4P_2vUpN0NtyUz4Y1faXgvOXzDg"
         />
+        <meta
+          name="google-site-verification"
+          content="h3lSHPs4T8PchloMQhsEKqv5bmxSSWiEgDmUudgQu9E"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
