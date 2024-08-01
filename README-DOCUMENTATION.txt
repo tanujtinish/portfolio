@@ -27,5 +27,5 @@ your own projects and articles images.
 If you have any question or You want me to make project then You can 
 reach out to me via:
 
-- E-mail : tanujinusa@gmail.com
+- E-mail : tanuj.professional@gmail.com
 - Instagram: https://www.instagram.com/tanuj._.gupta/

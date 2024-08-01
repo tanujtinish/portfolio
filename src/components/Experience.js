@@ -126,7 +126,7 @@ const Experience = ({ styleObj }) => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Founding Software Developer"
+            position="Team lead / Founding Software Engineer"
             company="Metajungle LLC"
             companyLink="https://www.metajungle.io/"
             time="2023-Present"
@@ -137,11 +137,11 @@ const Experience = ({ styleObj }) => {
             teamDetails="Worked in a team of seven engineers responsible for developing a groundbreaking one-stop portal where people can interact with their NFTs by aggregating data from various marketplaces, blockchains, and the Internet."
             role="As the team lead and founding software engineer, I have:"
             roleDetails={[
-              "Designed storage layer for efficient storage and querying of 17 million blockchain transaction ",
-              "Built a system for aggregating NFT data from blockchains and the internet at the scale of million operations a day",
-              "Lead the backend development for http and websocket based API's using Next JS, Node JS, Kafka Queue, Web3.JS, and Solidity, among other technologies",
+              "Leading a team of 9 engineers to develop a groundbreaking portal using Next JS, Express JS, and AWS, featuring wallet, creator, NFT, and collection pages with integrated social media, aggregating data from blockchains and the internet",
+              "Designed Blockchain Index using Cassandra, MongoDB, Hadoop, Ethereum, and Redis for efficient storage and querying of 20 million blockchain transactions with more than 1 billion Nft and ERC20 Transfers",
+              "Built distributed data pipelines for aggregating NFT data from blockchains and the internet at the scale of a million daily operations using Airflow, Spark, and NodeJS",
               "Implemented AWS Based cloud infrastructure as code using Terraform with services like ECS, ELB, ASG, etc",
-              "Developed Chat Service for all pages on Metajungle using WebSockets, load balancers, change streams, and Kafka queue.",
+              "Developed Chat Service for all pages on Metajungle using WebSockets, load balancers, change streams, and Kafka queue",
               "Developed an advanced (RAG) system to dynamically enhance NFT data generation, significantly improving the accuracy and depth of information available to customers for making informed decisions",
             ]}
           />

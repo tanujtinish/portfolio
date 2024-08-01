@@ -159,8 +159,8 @@ export default function Articles() {
 
             <FeaturedArticle
               img={blog2}
-              title="Part 1: Getting Started with Ethereum: Key Concepts and Basics"
-              summary="Welcome to Part 1 of our series, “Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products.” This part serves as a foundational introduction to Ethereum, covering its core concepts and basics. While this article is part of a larger series, it can also be learned separately to gain a solid understanding of Ethereum’s fundamental principles."
+              title="Part 1: Demystifying Ethereum: Transactions, Account States, Transaction Types, and Events"
+              summary="Welcome to Part 1 of our series, “Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products.” Ethereum, as one of the leading blockchain platforms, presents a complex yet fascinating ecosystem of transactions, accounts, contracts, and events. Understanding these core concepts is crucial for anyone looking to delve into the world of decentralized applications (dApps) and smart contracts. This article aims to demystify the intricacies of Ethereum by exploring how transactions work, Types of accounts and their account states, various types of transactions, and the significance of events within the Ethereum network."
               link="https://medium.com/@tanujinusa/part-1-getting-started-with-ethereum-key-concepts-and-basics-1270e2091fb3"
             />
           </ul>
@@ -170,12 +170,28 @@ export default function Articles() {
           </h2>
 
           <ul className="flex flex-col items-center relative">
-            <Article
-              date="January 27, 2023"
+            <FeaturedArticle
+              date="July 1, 2023"
               img={blog1}
               title="Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products"
               summary="Learn how to understand data on Ethereum Blockchain and how to power your app with blockchain data at high speed."
               link="https://medium.com/@tanujinusa/art-of-mastering-ethereum-transactions-high-speed-blockchain-data-for-your-products-5c1aa3e28136"
+            />
+
+            <FeaturedArticle
+              date="July 8, 2024"
+              img={blog2}
+              title="Part 1: Demystifying Ethereum: Transactions, Account States, Transaction Types, and Events"
+              summary="Welcome to Part 1 of our series, “Art of Mastering Ethereum Transactions: High-Speed Blockchain Data for Your Products.” Ethereum, as one of the leading blockchain platforms, presents a complex yet fascinating ecosystem of transactions, accounts, contracts, and events. Understanding these core concepts is crucial for anyone looking to delve into the world of decentralized applications (dApps) and smart contracts. This article aims to demystify the intricacies of Ethereum by exploring how transactions work, Types of accounts and their account states, various types of transactions, and the significance of events within the Ethereum network."
+              link="https://medium.com/@tanujinusa/part-1-getting-started-with-ethereum-key-concepts-and-basics-1270e2091fb3"
+            />
+
+            <FeaturedArticle
+              date="July 21, 2024"
+              img={blog2}
+              title="Part 2: Ethereum Blockchain: Understanding State Maintenance, Consensus, Block Addition, and Forking"
+              summary="In this article, we delve into the intricate workings of the Ethereum blockchain, exploring how nodes maintain a consistent state across a decentralized network, and how new blocks are added to the blockchain. We’ll uncover the roles of consensus and execution clients in ensuring that all nodes remain synchronized. Furthermore, we will explain functions of validator nodes and the mechanisms of Proof of Work (PoW) and Proof of Stake (PoS)."
+              link="https://medium.com/@tanujinusa/part-2-ethereum-blockchain-understanding-state-maintenance-consensus-block-addition-and-a3dc731ae855"
             />
           </ul>
         </Layout>

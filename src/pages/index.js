@@ -111,7 +111,7 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  href="mailto:tanujinusa@gmail.com"
+                  href="mailto:tanuj.professional@gmail.com"
                   className="ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base"
                   style={{
