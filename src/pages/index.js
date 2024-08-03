@@ -143,7 +143,7 @@ export default function Home() {
           />
         </div>
       </article>
-      <Dance styleObj={{ marginTop: "0" }} />
+      {/* <Dance styleObj={{ marginTop: "0" }} /> */}
     </>
   );
 }

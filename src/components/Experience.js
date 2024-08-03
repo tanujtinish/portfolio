@@ -84,6 +84,7 @@ const Details = ({
           style={{
             marginTop: "calc(var(--base-font-size) * (10 / 32))",
             fontSize: "calc(var(--base-font-size) * (14 / 32))",
+            fontWeight: "600",
           }}
         >
           {" "}
@@ -134,10 +135,9 @@ const Experience = ({ styleObj }) => {
             techStack={
               "Next JS, Node JS, Web3.JS, Solidity, Hadoop, MongoDB, Cassandra, Airflow, AWS ECS, Elastic Search, Jenkins"
             }
-            teamDetails="Worked in a team of seven engineers responsible for developing a groundbreaking one-stop portal where people can interact with their NFTs by aggregating data from various marketplaces, blockchains, and the Internet."
+            teamDetails="Leading a team of 9 engineers to develop a groundbreaking portal using Next JS, Express JS, and AWS. Platform featuring wallet, creator, NFT, and collection pages with integrated social media, aggregating data from blockchains and the internet"
             role="As the team lead and founding software engineer, I have:"
             roleDetails={[
-              "Leading a team of 9 engineers to develop a groundbreaking portal using Next JS, Express JS, and AWS, featuring wallet, creator, NFT, and collection pages with integrated social media, aggregating data from blockchains and the internet",
               "Designed Blockchain Index using Cassandra, MongoDB, Hadoop, Ethereum, and Redis for efficient storage and querying of 20 million blockchain transactions with more than 1 billion Nft and ERC20 Transfers",
               "Built distributed data pipelines for aggregating NFT data from blockchains and the internet at the scale of a million daily operations using Airflow, Spark, and NodeJS",
               "Implemented AWS Based cloud infrastructure as code using Terraform with services like ECS, ELB, ASG, etc",
