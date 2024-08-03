@@ -100,7 +100,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
       }}
     >
       <div
-        className="absolute  top-0 -right-3 w-[102%] h-[103%] rounded-[2rem]  rounded-br-3xl bg-dark 
+        className="absolute  top-0 -right-3 w-[102%] h-[103%] rounded-[2rem]  rounded-br-3xl bg-darkGlass dark:bg-lightGlass
         -z-10  "
       />
       <Link
@@ -148,7 +148,7 @@ export default function Articles() {
       <main
         className={`w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden`}
       >
-        <Layout className="pt-16">
+        <Layout>
           <AnimatedText
             text="Words Can Change the World!"
             className="!text-8xl !leading-tight mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"

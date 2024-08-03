@@ -24,7 +24,7 @@ const CustomLink = ({ href, title, className = "" }) => {
   return (
     <Link
       href={href}
-      className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}
+      className={`${className}  rounded relative group lg:text-light lg:dark:text-dark hover:-translate-y-1`}
     >
       {title}
       <span
@@ -104,12 +104,15 @@ const Navbar = () => {
 
   return (
     <header
-      className="w-full flex items-center justify-between font-medium z-10 dark:text-light
-    lg:px-16 relative z-1 md:px-12 sm:px-8
+      className="fixed w-full flex items-center justify-between font-medium z-10 
+    lg:px-16 z-1 md:px-12 sm:px-8 text-light bg-darkGlass dark:text-dark dark:bg-lightGlass
     "
       style={{
         padding:
           "calc(var(--base-font-size) * (24 / 32)) calc(var(--base-font-size) * (24 / 32))",
+        backdropFilter: "blur(calc(var(--base-font-size) * (24 / 32)))",
+        "-webkit-backdrop-filter":
+          "blur(calc(var(--base-font-size) * (24 / 32)))",
       }}
     >
       <button
@@ -134,8 +137,8 @@ const Navbar = () => {
           <CustomLink className="mr-4" href="/" title="Home" />
           <CustomLink className="mx-4" href="/about" title="About" />
           {/* <CustomLink className="mx-4" href="/projects" title="Projects" /> */}
-          <CustomLink className="mx-4" href="/experience" title="Experience" />
-          <CustomLink className="mx-4" href="/education" title="Education" />
+          {/* <CustomLink className="mx-4" href="/experience" title="Experience" />
+          <CustomLink className="mx-4" href="/education" title="Education" /> */}
           <CustomLink className="mx-4" href="/skills" title="Skills" />
           <CustomLink className="ml-4" href="/articles" title="Articles" />
         </nav>
@@ -249,7 +252,7 @@ const Navbar = () => {
               href="/articles"
               title="Articles"
             />
-            <CustomMobileLink
+            {/* <CustomMobileLink
               toggle={handleClick}
               className=""
               href="/experience"
@@ -260,7 +263,7 @@ const Navbar = () => {
               className=""
               href="/education"
               title="Education"
-            />
+            /> */}
             <CustomMobileLink
               toggle={handleClick}
               className=""

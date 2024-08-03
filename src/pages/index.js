@@ -37,12 +37,10 @@ export default function Home() {
             isMobile
               ? {
                   padding: "calc(var(--base-font-size) * (32 / 32))",
-                  paddingTop: "0",
                 }
               : {
                   padding: "calc(var(--base-font-size) * (16 / 32))",
                   paddingRight: "calc(var(--base-font-size) * (32 / 32))",
-                  paddingTop: "0",
                 }
           }
         >
@@ -95,9 +93,9 @@ export default function Home() {
                   // }}
                   // href="/resume"
                   href="/Tanuj Gupta - Resume.pdf"
-                  className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
+                  className={`flex items-center rounded-lg border-2 border-solid bg-darkGlass2 p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
-            dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
+            dark:bg-lightGlass2 dark:text-dark dark:hover:border-light dark:hover:bg-transparent dark:hover:text-light
             md:p-2 md:px-4 md:text-base
              `}
                   style={{
@@ -105,6 +103,10 @@ export default function Home() {
                     lineHeight: "calc(var(--base-font-size) * (2.5 / 2))",
                     padding:
                       "calc(var(--base-font-size) * (12 / 32)) calc(var(--base-font-size) * (36 / 32))",
+                    backdropFilter:
+                      "blur(calc(var(--base-font-size) * (24 / 32)))",
+                    "-webkit-backdrop-filter":
+                      "blur(calc(var(--base-font-size) * (24 / 32)))",
                   }}
                 >
                   Resume <LinkArrow className="ml-1 !w-6 md:!w-4" />

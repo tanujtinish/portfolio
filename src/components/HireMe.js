@@ -15,7 +15,7 @@ export const HireMe = () => {
         <Link
           href="mailto:tanuj.professional@gmail.com"
           className="flex items-center justify-center absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] shadow-md border border-solid
-bg-dark rounded-full text-white w-20 h-20 font-semibold hover:bg-light hover:border-dark hover:text-dark dark:text-dark dark:bg-light dark:hover:bg-dark
+bg-darkGlass2 rounded-full text-white w-20 h-20 font-semibold hover:bg-lightGlass2 hover:border-dark hover:text-dark dark:text-dark dark:bg-lightGlass dark:hover:bg-darkGlass
 dark:hover:text-light dark:hover:border-light dark:shadow-light/25 md:w-12 md:h-12 md:text-[10px]
 "
         >

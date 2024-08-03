@@ -22,7 +22,7 @@ const ExperiencePage = () => {
       <main
         className={`flex  w-full flex-col items-center justify-center dark:text-light`}
       >
-        <Layout className="pt-16">
+        <Layout>
           <Experience
             styleObj={{ marginTop: "calc(var(--base-font-size) * (32 / 32))" }}
           />

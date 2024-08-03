@@ -22,7 +22,7 @@ const EducationPage = () => {
       <main
         className={`flex  w-full flex-col items-center justify-center dark:text-light`}
       >
-        <Layout className="pt-16">
+        <Layout>
           <Education
             styleObj={{ marginTop: "calc(var(--base-font-size) * (32 / 32))" }}
           />

@@ -18,7 +18,7 @@ export default function resume() {
       <main
         className={`flex  w-full flex-col items-center justify-center dark:text-light`}
       >
-        <Layout className="pt-16">
+        <Layout>
           <PdfViewer pdfUrl={"/Tanuj Gupta - Resume.pdf"} />;
         </Layout>
       </main>
