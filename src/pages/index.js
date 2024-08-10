@@ -13,6 +13,7 @@ import useIsMobile from "../components/Hooks/useIsMobile";
 import Dance from "@/components/Dance";
 import About from "@/components/About";
 import AboutPage from "./about";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -128,7 +129,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {isMobile && <AboutPage />}
+          {/* {isMobile && <AboutPage />} */}
+          <Projects
+            styleObj={{ marginTop: "calc(var(--base-font-size) * (48 / 32))" }}
+            title="Projects"
+          />
         </Layout>
 
         <HireMe />

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function cLangIcon({ width, height }) {
+export default function CLangIcon({ width, height }) {
   return (
     <svg
       height={width || "288"}

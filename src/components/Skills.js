@@ -132,62 +132,62 @@ const Skills = ({ styleObj }) => {
             <Skill name="DSA" x="15vw" y="-35vw" />
             <Skill name="Cassandra" x="-15vw" y="-35vw">
               <AddInfoModal info="Apache Cassandra">
-                <SiApachecassandra size={"2em"} color="#1287B1" />
+                <SiApachecassandra size={"3em"} color="#1287B1" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="GraphQL" x="30vw" y="-19.5vw">
               <AddInfoModal info="GraphQL">
-                <GrGraphQl size={"2em"} color="#E10098" />
+                <GrGraphQl size={"3em"} color="#E10098" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="Spring Boot" x="-30vw" y="-19.5vw">
               <AddInfoModal info="Spring Boot">
-                <BiLogoSpringBoot size={"2em"} color="#6DB33F" />
+                <BiLogoSpringBoot size={"3em"} color="#6DB33F" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="Kubernetes/ECS" x="0.5vw" y="-12vw">
               <AddInfoModal info="Kubernetes">
-                <AiOutlineKubernetes size={"2em"} color="#326CE5" />
+                <AiOutlineKubernetes size={"3em"} color="#326CE5" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="AWS" x="38vw" y="0vw">
               <AddInfoModal info="AWS">
-                <FaAws size={"2em"} color="#FF9900" />
+                <FaAws size={"3em"} color="#FF9900" />
               </AddInfoModal>
             </Skill>
             <Skill name="Rest APIs" x="-38vw" y="0vw" />
 
             <Skill name="Dockers" x="0.5vw" y="12vw">
               <AddInfoModal info="Docker">
-                <FaDocker size={"2em"} color="#2496ED" />
+                <FaDocker size={"3em"} color="#2496ED" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="MongoDB" x="-30vw" y="19.5vw">
               <AddInfoModal info="MongoDB">
-                <SiMongodb size={"2em"} color="#47A248" />
+                <SiMongodb size={"3em"} color="#47A248" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="Postgres" x="30vw" y="19.5vw">
               <AddInfoModal info="PostgreSQL">
-                <BiLogoPostgresql size={"2em"} color="#336791" />
+                <BiLogoPostgresql size={"3em"} color="#336791" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="Redis" x="-15vw" y="35vw">
               <AddInfoModal info="Redis">
-                <DiRedis size={"2em"} color="#DC382D" />
+                <DiRedis size={"3em"} color="#DC382D" />
               </AddInfoModal>
             </Skill>
             <Skill name="Kafka" x="15vw" y="35vw">
               <AddInfoModal info="Apache Kafka">
                 <SiApachekafka
-                  size={"2em"}
+                  size={"3em"}
                   color={isDarkMode ? "#ffffff" : "#231F20"}
                 />
               </AddInfoModal>
@@ -195,7 +195,7 @@ const Skills = ({ styleObj }) => {
 
             <Skill name="Node JS" x="20vw" y="55vw">
               <AddInfoModal info="Node.js">
-                <FaNodeJs size={"2em"} color="#68A063" />
+                <FaNodeJs size={"3em"} color="#68A063" />
               </AddInfoModal>
             </Skill>
 
@@ -206,56 +206,56 @@ const Skills = ({ styleObj }) => {
             <Skill name="Rest APIs" x="-20vw" y="2vw" />
             <Skill name="AWS" x="16vw" y="-2vw">
               <AddInfoModal info="AWS">
-                <FaAws size={"2em"} color="#FF9900" />
+                <FaAws size={"3em"} color="#FF9900" />
               </AddInfoModal>
             </Skill>
             <Skill name="GraphQL" x="-5vw" y="-10vw">
               <AddInfoModal info="GraphQL">
-                <GrGraphQl size={"2em"} color="#E10098" />
+                <GrGraphQl size={"3em"} color="#E10098" />
               </AddInfoModal>
             </Skill>
             <Skill name="Kubernetes/ECS" x="20vw" y="6vw">
               <AddInfoModal info="Kubernetes">
-                <AiOutlineKubernetes size={"2em"} color="#326CE5" />
+                <AiOutlineKubernetes size={"3em"} color="#326CE5" />
               </AddInfoModal>
             </Skill>
             <Skill name="Dockers" x="35vw" y="8vw">
               <AddInfoModal info="Docker">
-                <FaDocker size={"2em"} color="#2496ED" />
+                <FaDocker size={"3em"} color="#2496ED" />
               </AddInfoModal>
             </Skill>
             <Skill name="Node JS" x="0vw" y="12vw">
               <AddInfoModal info="Node.js">
-                <FaNodeJs size={"2em"} color="#68A063" />
+                <FaNodeJs size={"3em"} color="#68A063" />
               </AddInfoModal>
             </Skill>
             <Skill name="Spring Boot" x="-20vw" y="-15vw">
               <AddInfoModal info="Spring Boot">
-                <BiLogoSpringBoot size={"2em"} color="#6DB33F" />
+                <BiLogoSpringBoot size={"3em"} color="#6DB33F" />
               </AddInfoModal>
             </Skill>
             <Skill name="Design Patterns" x="10vw" y="-9vw" />
             <Skill name="DSA" x="-35vw" y="-5vw" />
             <Skill name="Redis" x="32vw" y="-5vw">
               <AddInfoModal info="Redis">
-                <DiRedis size={"2em"} color="#DC382D" />
+                <DiRedis size={"3em"} color="#DC382D" />
               </AddInfoModal>
             </Skill>
             <Skill name="MultiThreading" x="0vw" y="-20vw" />
             <Skill name="MongoDB" x="-25vw" y="18vw">
               <AddInfoModal info="MongoDB">
-                <SiMongodb size={"2em"} color="#47A248" />
+                <SiMongodb size={"3em"} color="#47A248" />
               </AddInfoModal>
             </Skill>
             <Skill name="Postgres" x="20vw" y="-15vw">
               <AddInfoModal info="PostgreSQL">
-                <BiLogoPostgresql size={"2em"} color="#336791" />
+                <BiLogoPostgresql size={"3em"} color="#336791" />
               </AddInfoModal>
             </Skill>
             <Skill name="Kafka" x="28vw" y="18vw">
               <AddInfoModal info="Apache Kafka">
                 <SiApachekafka
-                  size={"2em"}
+                  size={"3em"}
                   color={isDarkMode ? "#231F20" : "#ffffff"}
                 />
               </AddInfoModal>
@@ -263,7 +263,7 @@ const Skills = ({ styleObj }) => {
             <Skill name="Distributed Systems" x="0vw" y="21vw" />
             <Skill name="Cassandra" x="-35vw" y="6vw">
               <AddInfoModal info="Apache Cassandra">
-                <SiApachecassandra size={"2em"} color="#1287B1" />
+                <SiApachecassandra size={"3em"} color="#1287B1" />
               </AddInfoModal>
             </Skill>
           </>
@@ -298,19 +298,19 @@ const Skills = ({ styleObj }) => {
 
             <Skill name="Airflow" x="20vw" y="-55vw">
               <AddInfoModal info="Apache Airflow">
-                <SiApacheairflow size={"2em"} color="#017CEE" />
+                <SiApacheairflow size={"3em"} color="#017CEE" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="Spark" x="15vw" y="-35vw">
               <AddInfoModal info="Apache Spark">
-                <SiApachespark size={"2em"} color="#E25A1C" />
+                <SiApachespark size={"3em"} color="#E25A1C" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="Hadoop" x="-15vw" y="-35vw">
               <AddInfoModal info="Apache Hadoop">
-                <GrHadoop size={"2em"} color="#66CCFF" />
+                <GrHadoop size={"3em"} color="#66CCFF" />
               </AddInfoModal>
             </Skill>
 
@@ -322,14 +322,14 @@ const Skills = ({ styleObj }) => {
 
             <Skill name="Hive" x="-38vw" y="0vw">
               <AddInfoModal info="Apache Hive">
-                <SiApachehive size={"2em"} color="#FF9900" />
+                <SiApachehive size={"3em"} color="#FF9900" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="Kafka" x="-30vw" y="19.5vw">
               <AddInfoModal info="Apache Kafka">
                 <SiApachekafka
-                  size={"2em"}
+                  size={"3em"}
                   color={isDarkMode ? "#ffffff" : "#231F20"}
                 />
               </AddInfoModal>
@@ -341,7 +341,7 @@ const Skills = ({ styleObj }) => {
 
             <Skill name="Presto" x="20vw" y="55vw">
               <AddInfoModal info="Presto">
-                <SiPresto size={"2em"} color="#4695EB" />
+                <SiPresto size={"3em"} color="#4695EB" />
               </AddInfoModal>
             </Skill>
 
@@ -351,7 +351,7 @@ const Skills = ({ styleObj }) => {
           <>
             <Skill name="AWS" x="-20vw" y="2vw">
               <AddInfoModal info="AWS">
-                <FaAws size={"2em"} color="#FF9900" />
+                <FaAws size={"3em"} color="#FF9900" />
               </AddInfoModal>
             </Skill>
 
@@ -359,19 +359,19 @@ const Skills = ({ styleObj }) => {
 
             <Skill name="Airflow" x="-5vw" y="-10vw">
               <AddInfoModal info="Apache Airflow">
-                <SiApacheairflow size={"2em"} color="#017CEE" />
+                <SiApacheairflow size={"3em"} color="#017CEE" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="Spark" x="20vw" y="6vw">
               <AddInfoModal info="Apache Spark">
-                <SiApachespark size={"2em"} color="#E25A1C" />
+                <SiApachespark size={"3em"} color="#E25A1C" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="Hadoop" x="0vw" y="12vw">
               <AddInfoModal info="Apache Hadoop">
-                <GrHadoop size={"2em"} color="#66CCFF" />
+                <GrHadoop size={"3em"} color="#66CCFF" />
               </AddInfoModal>
             </Skill>
 
@@ -379,13 +379,13 @@ const Skills = ({ styleObj }) => {
 
             <Skill name="Hive" x="15vw" y="-12vw">
               <AddInfoModal info="Apache Hive">
-                <SiApachehive size={"2em"} color="#FF9900" />
+                <SiApachehive size={"3em"} color="#FF9900" />
               </AddInfoModal>
             </Skill>
 
             <Skill name="Presto" x="-35vw" y="-5vw">
               <AddInfoModal info="Presto">
-                <SiPresto size={"2em"} color="#4695EB" />
+                <SiPresto size={"3em"} color="#4695EB" />
               </AddInfoModal>
             </Skill>
 
@@ -398,7 +398,7 @@ const Skills = ({ styleObj }) => {
             <Skill name="Kafka" x="28vw" y="18vw">
               <AddInfoModal info="Apache Kafka">
                 <SiApachekafka
-                  size={"2em"}
+                  size={"3em"}
                   color={isDarkMode ? "#231F20" : "#ffffff"}
                 />
               </AddInfoModal>
@@ -441,32 +441,32 @@ const Skills = ({ styleObj }) => {
             <>
               <Skill name="HTML" x="-28vw" y="2vw">
                 <AddInfoModal info="HTML5">
-                  <FaHtml5 size={"2em"} color="#E34F26" />
+                  <FaHtml5 size={"3em"} color="#E34F26" />
                 </AddInfoModal>
               </Skill>
 
               <Skill name="CSS" x="-16vw" y="-16vw">
                 <AddInfoModal info="CSS3">
-                  <FaCss3Alt size={"2em"} color="#1572B6" />
+                  <FaCss3Alt size={"3em"} color="#1572B6" />
                 </AddInfoModal>
               </Skill>
 
               <Skill name="JavaScript" x="22vw" y="12vw">
                 <AddInfoModal info="JavaScript">
-                  <IoLogoJavascript size={"2em"} color="#F7DF1E" />
+                  <IoLogoJavascript size={"3em"} color="#F7DF1E" />
                 </AddInfoModal>
               </Skill>
 
               <Skill name="ReactJS" x="-10vw" y="18vw">
                 <AddInfoModal info="ReactJS">
-                  <RiReactjsFill size={"2em"} color="#61DAFB" />
+                  <RiReactjsFill size={"3em"} color="#61DAFB" />
                 </AddInfoModal>
               </Skill>
 
               <Skill name="NextJS" x="10vw" y="-20vw">
                 <AddInfoModal info="NextJS">
                   <RiNextjsFill
-                    size={"2em"}
+                    size={"3em"}
                     color={isDarkMode ? "#ffffff" : "#000000"}
                   />
                 </AddInfoModal>
@@ -474,7 +474,7 @@ const Skills = ({ styleObj }) => {
 
               <Skill name="Tailwind CSS" x="30vw" y="-6vw">
                 <AddInfoModal info="Tailwind CSS">
-                  <RiTailwindCssFill size={"2em"} color="#38B2AC" />
+                  <RiTailwindCssFill size={"3em"} color="#38B2AC" />
                 </AddInfoModal>
               </Skill>
             </>
@@ -482,32 +482,32 @@ const Skills = ({ styleObj }) => {
             <>
               <Skill name="HTML" x="-14vw" y="1vw">
                 <AddInfoModal info="HTML5">
-                  <FaHtml5 size={"2em"} color="#E34F26" />
+                  <FaHtml5 size={"3em"} color="#E34F26" />
                 </AddInfoModal>
               </Skill>
 
               <Skill name="CSS" x="-8vw" y="-8vw">
                 <AddInfoModal info="CSS3">
-                  <FaCss3Alt size={"2em"} color="#1572B6" />
+                  <FaCss3Alt size={"3em"} color="#1572B6" />
                 </AddInfoModal>
               </Skill>
 
               <Skill name="JavaScript" x="11vw" y="6vw">
                 <AddInfoModal info="JavaScript">
-                  <IoLogoJavascript size={"2em"} color="#F7DF1E" />
+                  <IoLogoJavascript size={"3em"} color="#F7DF1E" />
                 </AddInfoModal>
               </Skill>
 
               <Skill name="ReactJS" x="-5vw" y="9vw">
                 <AddInfoModal info="ReactJS">
-                  <RiReactjsFill size={"2em"} color="#61DAFB" />
+                  <RiReactjsFill size={"3em"} color="#61DAFB" />
                 </AddInfoModal>
               </Skill>
 
               <Skill name="NextJS" x="5vw" y="-10vw">
                 <AddInfoModal info="NextJS">
                   <RiNextjsFill
-                    size={"2em"}
+                    size={"3em"}
                     color={isDarkMode ? "#000000" : "#ffffff"}
                   />
                 </AddInfoModal>
@@ -515,7 +515,7 @@ const Skills = ({ styleObj }) => {
 
               <Skill name="Tailwind CSS" x="15vw" y="-3vw">
                 <AddInfoModal info="Tailwind CSS">
-                  <RiTailwindCssFill size={"2em"} color="#38B2AC" />
+                  <RiTailwindCssFill size={"3em"} color="#38B2AC" />
                 </AddInfoModal>
               </Skill>
             </>
@@ -543,7 +543,10 @@ const Skills = ({ styleObj }) => {
             <>
               <Skill name="Ethereum" x="-28vw" y="2vw">
                 <AddInfoModal info="Ethereum">
-                  <FaEthereum size={"2em"} color="#3C3C3D" />
+                  <FaEthereum
+                    size={"3em"}
+                    color={isDarkMode ? "white" : "#3C3C3D"}
+                  />
                 </AddInfoModal>
               </Skill>
 
@@ -554,7 +557,7 @@ const Skills = ({ styleObj }) => {
               <Skill name="Solidity" x="-10vw" y="18vw">
                 <AddInfoModal info="Solidity">
                   <SiSolidity
-                    size={"2em"}
+                    size={"3em"}
                     color={isDarkMode ? "#ffffff" : "#000000"}
                   />
                 </AddInfoModal>
@@ -562,7 +565,7 @@ const Skills = ({ styleObj }) => {
 
               <Skill name="IPFS" x="10vw" y="-20vw">
                 <AddInfoModal info="IPFS">
-                  <SiIpfs size={"2em"} color="#65C2CB" />
+                  <SiIpfs size={"3em"} color="#65C2CB" />
                 </AddInfoModal>
               </Skill>
 
@@ -572,7 +575,10 @@ const Skills = ({ styleObj }) => {
             <>
               <Skill name="Ethereum" x="-14vw" y="1vw">
                 <AddInfoModal info="Ethereum">
-                  <FaEthereum size={"2em"} color="#3C3C3D" />
+                  <FaEthereum
+                    size={"3em"}
+                    color={isDarkMode ? "#3C3C3D" : "white"}
+                  />
                 </AddInfoModal>
               </Skill>
 
@@ -583,7 +589,7 @@ const Skills = ({ styleObj }) => {
               <Skill name="Solidity" x="-5vw" y="9vw">
                 <AddInfoModal info="Solidity">
                   <SiSolidity
-                    size={"2em"}
+                    size={"3em"}
                     color={isDarkMode ? "#000000" : "#ffffff"}
                   />
                 </AddInfoModal>
@@ -591,7 +597,7 @@ const Skills = ({ styleObj }) => {
 
               <Skill name="IPFS" x="5vw" y="-10vw">
                 <AddInfoModal info="IPFS">
-                  <SiIpfs size={"2em"} color="#65C2CB" />
+                  <SiIpfs size={"3em"} color="#65C2CB" />
                 </AddInfoModal>
               </Skill>
 
