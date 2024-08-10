@@ -1,0 +1,30 @@
+:root {
+  --base-font-size-item-page: 1.5vw;
+}
+@media screen and (max-width: 1100px) {
+  body {
+    --base-font-size-item-page: 4vw;
+  }
+}
+
+.info-text-modal-container {
+  cursor: pointer;
+  z-index: 999;
+  position: absolute;
+  width: auto;
+  /* color: #183b56; */
+  text-align: left;
+  height: auto;
+  font-size: calc(var(--base-font-size-item-page) * 12 / 20);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #fff; */
+  box-shadow: calc(var(--base-font-size-item-page) * 1 / 20)
+    calc(var(--base-font-size-item-page) * 1 / 20)
+    calc(var(--base-font-size-item-page) * 10 / 20)
+    calc(var(--base-font-size-item-page) * 0 / 20) rgba(47, 180, 132, 0.25);
+  padding: calc(var(--base-font-size-item-page) * 7 / 20);
+  margin-top: calc(var(--base-font-size-item-page) * 2 / 20);
+}

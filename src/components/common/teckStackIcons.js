@@ -1,0 +1,29 @@
+import { FaNodeJs } from "react-icons/fa";
+import { RiReactjsFill } from "react-icons/ri";
+import { SiWeb3Dotjs } from "react-icons/si";
+import { FaEthereum } from "react-icons/fa";
+import { SiApacheairflow } from "react-icons/si";
+import { GrGraphQl } from "react-icons/gr";
+import { SiApachekafka } from "react-icons/si";
+import { FaGolang } from "react-icons/fa6";
+import { SiElasticsearch } from "react-icons/si";
+import { SiRocksdb } from "react-icons/si";
+import { SiIpfs } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiApachecassandra } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { AiOutlineKubernetes } from "react-icons/ai";
+import { FaDocker } from "react-icons/fa";
+
+import { SiApachehive } from "react-icons/si";
+import { SiApachespark } from "react-icons/si";
+import { GrHadoop } from "react-icons/gr";
+import { SiPresto } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { SiSolidity } from "react-icons/si";
+
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
