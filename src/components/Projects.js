@@ -284,8 +284,8 @@ export default function Projects({ styleObj, title }) {
         <div className="col-span-12">
           <FeaturedProject
             type="Featured Project"
-            title="Revolutionizing NFT Management: A Full-Stack Platform Built with Next.js, GraphQL, and AWS"
-            summary="This innovative platform offers an immersive way to explore and manage NFTs, with features like wallet reports, collection tracking, and creator insights. Built with Next.js, Node.js, and GraphQL, it leverages AWS for scalable cloud infrastructure, and integrates a robust blockchain index using Cassandra, MongoDB, and Ethereum to efficiently handle over 20 million transactions."
+            title="Revolutionizing NFT Management: A Full-Stack Platform Built with React.js, Node.js, GraphQL, and AWS"
+            summary="This innovative platform offers an immersive way to explore and manage NFTs, with features like wallet reports, collection tracking, and creator insights. Built with React.js, Node.js, and GraphQL, it leverages AWS for scalable cloud infrastructure and integrates a robust blockchain index using Cassandra, MongoDB, and Ethereum to efficiently handle over 20 million transactions."
             img={NFTSpaceProjectImage}
             link="https://github.com/tanujtinish/web3_shopping_frontend"
             github="https://github.com/tanujtinish/web3_shopping_frontend"
