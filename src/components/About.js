@@ -59,6 +59,19 @@ export default function About() {
             specializing in building large-scale distributed systems. As a
             Founding Software Engineer at Metajungle since 2023, I have been
             leading a backend team to develop a one-stop NFT interaction portal.
+            <br />
+            <strong>Prototype: </strong>
+            <a
+              href="http://www.nftspaceship.org/"
+              style={{ textDecoration: "underline", color: "blue" }}
+            >
+              http://www.nftspaceship.org/
+            </a>
+          </p>
+          <p
+            className="my-4"
+            style={{ fontSize: "calc(var(--base-font-size) * (16 / 32))" }}
+          >
             This innovative project involves aggregating data from various
             marketplaces and blockchains to enhance user experiences in the NFT
             space. We are designing the database and compute layers that can
@@ -69,24 +82,26 @@ export default function About() {
             className="my-4"
             style={{ fontSize: "calc(var(--base-font-size) * (16 / 32))" }}
           >
-            I possess a strong command of full-stack development, particularly
-            with the MERN stack, leveraging React and Node.js. My experience
-            extends to using Spring Boot for backend development. My
-            contributions span both designing engaging single-page applications
-            using React and architecting complex backend systems. My full-stack
-            journey includes significant roles at renowned companies like Meta,
-            Airtel, OYO, and HDFC Life, where I honed my skills and contributed
-            to a variety of challenging projects.
+            I possess a strong command of full-stack development, with various
+            frontend and backend frameworks, particularly with the MERN stack.
+            My contributions span both designing engaging single-page
+            applications using frameworks like React.js, and Next.js and
+            architecting complex backend systems using Node.js, GraphQL, GoLang,
+            Spring Boot, AWS, etc. My full-stack journey includes significant
+            roles at renowned companies like Meta, Airtel, OYO, and HDFC Life,
+            where I honed my skills and contributed to a variety of challenging
+            projects.
           </p>
           <p style={{ fontSize: "calc(var(--base-font-size) * (16 / 32))" }}>
             In general, My passion lies in designing large-scale, complex
-            systems that are both fast and fault-tolerant. A graduate of UCSC
-            with an exceptional 4+/4 GPA, I possess a keen understanding of
-            modern distributed data structures, algorithms, and multi-threading
-            frameworks, including OpenMP, MPI, Cuda, and C++ POSIX Threads. This
-            knowledge provides me with valuable low-level insights into the
-            systems underpinning software, guiding my decisions on the most
-            effective databases or systems to employ.
+            systems that are both fast and fault-tolerant. A graduate of{" "}
+            <strong>BITS Pilani (India)</strong>, and{" "}
+            <strong>UCSC (California)</strong> with a 4+/4 GPA, I possess a keen
+            understanding of modern distributed data structures, algorithms, and
+            multi-threading frameworks, including OpenMP, MPI, Cuda, and C++
+            POSIX Threads. This knowledge provides me with valuable low-level
+            insights into the systems underpinning software, guiding my
+            decisions on the most effective databases or systems to employ.
           </p>
         </div>
         <div
