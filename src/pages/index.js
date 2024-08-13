@@ -14,6 +14,7 @@ import Dance from "@/components/Dance";
 import About from "@/components/About";
 import AboutPage from "./about";
 import Projects from "@/components/Projects";
+import AllArticles from "@/components/AllArticles";
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -130,6 +131,13 @@ export default function Home() {
             </div>
           </div>
           {/* {isMobile && <AboutPage />} */}
+          <AllArticles
+            title={"Articles"}
+            styleObj={{
+              marginTop: "calc(var(--base-font-size) * (48 / 32))",
+              fontSize: "calc(var(--base-font-size) * (62 / 32))",
+            }}
+          />
           <Projects
             styleObj={{ marginTop: "calc(var(--base-font-size) * (48 / 32))" }}
             title="Projects"
