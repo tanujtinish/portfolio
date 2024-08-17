@@ -477,7 +477,7 @@ export default function Projects({ styleObj, title }) {
             github="https://github.com/tanujtinish/Optimize_LSM_Based_Database_Reads"
             teckStacks={[
               <AddInfoModal info="C Language">
-                <CLangIcon size={"2em"} color="#A8B9CC" />
+                <CLangIcon width={"2em"} height={"2em"} color="#A8B9CC" />
               </AddInfoModal>,
 
               <AddInfoModal info="Database">
