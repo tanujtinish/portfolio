@@ -1,5 +1,7 @@
 import AnimatedText from "@/components/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
+import Image from "next/image";
+
 import Head from "next/head";
 import blog1 from "../../public/images/articles/bc_data_for_your_app.png";
 import blog2 from "../../public/images/articles/ethereum_part_1.png";
@@ -10,6 +12,8 @@ import TransitionEffect from "@/components/TransitionEffect";
 import AllArticles from "@/components/AllArticles";
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
+  const FramerImage = motion(Image);
+
   return (
     <li
       className="relative w-full p-4 col-span-1 bg-light border border-dark border-solid rounded-2xl 
