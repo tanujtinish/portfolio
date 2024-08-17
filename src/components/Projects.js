@@ -54,6 +54,7 @@ import flaskIcon from "@/components/common/flaskIcon";
 import FlaskIcon from "@/components/common/flaskIcon";
 import AddInfoModal from "@/components/common/AddInfoModal";
 import CLangIcon from "./common/cLangIcon";
+import { DiRedis } from "react-icons/di";
 
 const FramerImage = motion(Image);
 
@@ -476,7 +477,7 @@ export default function Projects({ styleObj, title }) {
             link="https://github.com/tanujtinish/Optimize_LSM_Based_Database_Reads"
             github="https://github.com/tanujtinish/Optimize_LSM_Based_Database_Reads"
             teckStacks={[
-              <AddInfoModal info="C Language">
+              <AddInfoModal info="C++ Language">
                 <CLangIcon width={"2em"} height={"2em"} color="#A8B9CC" />
               </AddInfoModal>,
 
@@ -511,6 +512,20 @@ export default function Projects({ styleObj, title }) {
 
               <AddInfoModal info="Go (Golang)">
                 <FaGolang size={"2em"} color="#00ADD8" />
+              </AddInfoModal>,
+
+              <AddInfoModal info="Ethereum">
+                <FaEthereum
+                  size={"2em"}
+                  color={isDarkMode ? "white" : "#3C3C3D"}
+                />
+              </AddInfoModal>,
+
+              <AddInfoModal info="Redis">
+                <DiRedis
+                  size={"2em"}
+                  color={isDarkMode ? "#DC382D" : "#A41E11"} // Darker shade for light mode, lighter for dark mode
+                />
               </AddInfoModal>,
             ]}
           />
