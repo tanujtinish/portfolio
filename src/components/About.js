@@ -14,6 +14,26 @@ function AnimatedNumberFramerMotion({ value }) {
   const springValue = useSpring(motionValue, { duration: 3000 });
   const isInView = useInView(ref, { once: true });
 
+  useEffect(() => {
+    if (isInView) {
+      motionValue.set(value);
+    }
+  }, [motionValue, value, isInView]);
+
+  useEffect(
+    () =>
+      springValue.on("change", (latest) => {
+        if (ref.current && latest.toFixed(0) <= value) {
+          ref.current.textContent = latest.toFixed(0);
+        }
+      }),
+    [springValue, value]
+  );
+
+  return <span ref={ref} />;
+}
+
+export default function About() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Detect the theme using Tailwind's dark mode class or other logic
@@ -36,26 +56,6 @@ function AnimatedNumberFramerMotion({ value }) {
     return () => observer.disconnect();
   }, []);
 
-  useEffect(() => {
-    if (isInView) {
-      motionValue.set(value);
-    }
-  }, [motionValue, value, isInView]);
-
-  useEffect(
-    () =>
-      springValue.on("change", (latest) => {
-        if (ref.current && latest.toFixed(0) <= value) {
-          ref.current.textContent = latest.toFixed(0);
-        }
-      }),
-    [springValue, value]
-  );
-
-  return <span ref={ref} />;
-}
-
-export default function About() {
   return (
     <>
       <AnimatedText
