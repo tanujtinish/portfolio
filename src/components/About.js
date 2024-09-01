@@ -63,7 +63,7 @@ export default function About() {
             <strong>Prototype: </strong>
             <a
               href="http://www.nftspaceship.org/"
-              style={{ textDecoration: "underline", color: "blue" }}
+              style={{ textDecoration: "underline", color: "#58e6d9" }}
             >
               http://www.nftspaceship.org/
             </a>
