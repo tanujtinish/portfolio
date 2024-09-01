@@ -13,6 +13,29 @@ function AnimatedNumberFramerMotion({ value }) {
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
   const isInView = useInView(ref, { once: true });
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Detect the theme using Tailwind's dark mode class or other logic
+  useEffect(() => {
+    // Assuming Tailwind's dark mode uses a class 'dark' on the root element
+    const root = window.document.documentElement;
+    const darkMode = root.classList.contains("dark");
+    setIsDarkMode(darkMode);
+
+    // Listen for theme changes
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach(() => {
+        const darkModeUpdated = root.classList.contains("dark");
+        setIsDarkMode(darkModeUpdated);
+      });
+    });
+
+    observer.observe(root, { attributes: true });
+
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
     if (isInView) {
       motionValue.set(value);
@@ -63,7 +86,10 @@ export default function About() {
             <strong>Prototype: </strong>
             <a
               href="http://www.nftspaceship.org/"
-              style={{ textDecoration: "underline", color: "#58e6d9" }}
+              style={{
+                textDecoration: "underline",
+                color: isDarkMode ? "#58e6d9" : "#b63e96",
+              }}
             >
               http://www.nftspaceship.org/
             </a>
